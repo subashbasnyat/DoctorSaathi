@@ -41,8 +41,22 @@
             android:value="@string/google_maps_key" />
 
         <activity
+            android:name=".BloodActivity"
+            android:label="Blood Main Form" />
+
+        <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps"></activity>
+
+        <activity
+            android:name=".AddContacts"
+            android:label="Donor Information Form" />
+        <activity
+            android:name=".DialogOptions"
+            android:theme="@style/Base.Theme.AppCompat.Dialog" />
+        <activity android:name=".DonorDescription" android:label="Donor Information"/>
+
+
     </application>
 
 </manifest>
