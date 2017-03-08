@@ -18,24 +18,44 @@ public class MainActivity extends AppCompatActivity
 
 
 
-    public ImageButton imgbutton;
+    public ImageButton imgbuttonhospital;
+    public ImageButton imgbuttonbloodbank;
     public ImageButton imgbuttonfirstaid;
+    public ImageButton imgbuttonayurvedic;
+
 
     public void init() {
-        imgbutton = (ImageButton) findViewById(R.id.imgHospital);
-        imgbuttonfirstaid = (ImageButton) findViewById(R.id.imgBloodBank);
-        imgbutton.setOnClickListener(new View.OnClickListener() {
+        imgbuttonhospital = (ImageButton) findViewById(R.id.imgHospital);
+        imgbuttonbloodbank = (ImageButton) findViewById(R.id.imgBloodBank);
+        imgbuttonayurvedic = (ImageButton) findViewById(R.id.imgAyurvedic);
+        imgbuttonfirstaid = (ImageButton)findViewById(R.id.imgFirstAid);
+        imgbuttonhospital.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent mappin = new Intent(MainActivity.this, MapsActivity.class);
                 startActivity(mappin);
             }
         });
-        imgbuttonfirstaid.setOnClickListener(new View.OnClickListener() {
+        imgbuttonbloodbank.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent blooding = new Intent(MainActivity.this, BloodActivity.class);
                 startActivity(blooding);
+            }
+        });
+        imgbuttonayurvedic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent ayurveding = new Intent(MainActivity.this, Ayurvedic.class);
+                startActivity(ayurveding);
+            }
+        });
+
+        imgbuttonfirstaid.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent firstaiding = new Intent(MainActivity.this, FAMainActivity.class);
+                startActivity(firstaiding);
             }
         });
     }

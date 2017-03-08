@@ -174,8 +174,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private void loadNearByPlaces(double latitude, double longitude) {
         Log.i("4","Chai Latitude"+latitude+longitude);
 //YOU Can change this type at your own will, e.g hospital, cafe, restaurant.... and see how it all works
-        String type = "grocery_or_supermarket";
-        String googlePlace;
+//        String type = "grocery_or_supermarket";
+//        String googlePlace;
         StringBuilder googlePlacesUrl =
                 new StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location="+latitude+","+longitude+"&radius=10000&types=hospital&sensor=true&key=AIzaSyCn-blCSTb2irKPZRKUQpXwPqGWn5iRPGQ");
         //googlePlace.append("location=").append(latitude).append(",").append(longitude);

@@ -142,13 +142,13 @@
                     android:layout_height="match_parent">
 
                     <ImageButton
+                        android:id="@+id/imgFirstAid"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/firstaid"
-                        android:id="@+id/imageButton"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
-                        android:cropToPadding="true" />
+                        android:cropToPadding="true"
+                        app:srcCompat="@drawable/firstaid" />
 
                     <ImageButton
                         android:layout_width="match_parent"
