@@ -68,8 +68,21 @@
             android:label="Donor Information" />
         <activity android:name=".Ayurvedic" />
         <activity android:name=".Details" />
-        <activity android:name=".FAMainActivity"></activity>
-        <activity android:name=".FADetailActivity"></activity>
+        <activity android:name=".FAMainActivity" />
+        <activity android:name=".FADetailActivity" />
+        <activity android:name=".MedicineReminder" />
+        <activity android:name=".eutaausadhi" />
+        <activity android:name=".duitaausadhi" />
+        <activity android:name=".tintaausadhi" />
+        <activity android:name=".charotaausadhi" />
+        <activity android:name=".panchotaausadhi" />
+        <activity android:name=".Final" />
+        <receiver android:name=".AlarmReceiver" />
+        <uses-permission android:name="android.permission.VIBRATE" />
+        <service
+            android:name=".RingtonePlayingService"
+            android:enabled="true" >
+        </service>
     </application>
 
 </manifest>
